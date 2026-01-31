@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Consulting | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <h2>AI Consulting</h2>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>AI Consulting for Modern Businesses</h1>
+  <p>
+    Helping companies adopt AI strategically to improve efficiency,
+    decision-making, and growth.
+  </p>
+  <a href="#contact" class="btn">Book Free Consultation</a>
+</section>
+
+<section id="services" class="services">
+  <h2>What We Do</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>AI Strategy</h3>
+      <p>Define where AI fits best in your business.</p>
+    </div>
+    <div class="card">
+      <h3>AI Integration</h3>
+      <p>Integrate AI tools into existing systems.</p>
+    </div>
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Reduce manual work using AI-powered workflows.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <h2>Our Process</h2>
+
+  <div class="process-step" onclick="toggleStep(this)">
+    <h3>Consult</h3>
+    <p class="step-detail">
+      We understand your business goals, existing systems, data availability,
+      and challenges to identify where AI can deliver the most value.
+    </p>
+  </div>
+
+  <div class="process-step" onclick="toggleStep(this)">
+    <h3>Plan</h3>
+    <p class="step-detail">
+      We design a clear AI roadmap including tools, timelines, architecture,
+      and cost estimates aligned with your business strategy.
+    </p>
+  </div>
+
+  <div class="process-step" onclick="toggleStep(this)">
+    <h3>Build</h3>
+    <p class="step-detail">
+      We develop, test, and validate AI solutions such as automation pipelines,
+      predictive models, or AI-powered applications.
+    </p>
+  </div>
+
+  <div class="process-step" onclick="toggleStep(this)">
+    <h3>Deploy</h3>
+    <p class="step-detail">
+      We integrate the solution into your systems, monitor performance,
+      and provide documentation and ongoing support.
+    </p>
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="status"></p>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 AI Consulting. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

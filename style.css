@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #222;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0f172a;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0d1627, #283e88, #00050f);
+  color: white;
+}
+
+.hero p {
+  padding-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: #1e40af;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SERVICES */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 30px;
+}
+
+.card {
+  padding: 25px;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.card p {
+  padding-top: 10px;
+}
+
+/* PROCESS */
+.process {
+  padding: 60px 20px;
+  background: #e5e7eb;
+  max-width: 900px;
+  margin: auto;
+}
+
+.process h2 {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-step {
+  background: white;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.process-step h3 {
+  margin: 0;
+  color: #1e40af;
+}
+
+.step-detail {
+  margin-top: 10px;
+  display: none;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .services,
+  .process,
+  .contact {
+    padding: 50px 15px;
+  }
+
+  .process {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    padding: 15px;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
